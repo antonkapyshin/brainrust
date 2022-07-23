@@ -1,1 +1,1 @@
-# Brainfuck interpreter in Rust
+# Brainf*ck interpreter in Rust

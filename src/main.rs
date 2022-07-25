@@ -8,7 +8,7 @@ fn main() {
     file.read_to_string(&mut input).expect("Could not read the file.");
 
     // Standard Brainfuck says the array should have 30000 1 byte elements.
-    let mut arr = vec![0; 30000];
+    let mut arr = [0; 30000];
     let mut index = 0;
     for elem in parser::parse(&input) {
         elem.interpret(&mut arr, &mut index);

@@ -11,7 +11,7 @@ pub enum SimpleConstruct {
 }
 
 impl SimpleConstruct {
-    pub fn interpret(self: &Self, arr: &mut Vec<u8>, index: &mut usize) {
+    pub fn interpret(self: &Self, arr: &mut [u8; 30000], index: &mut usize) {
         match self {
             Self::LeftShift => {
                 *index -= 1;
